@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/border"
+    android:clickable="true"
+    android:padding="5dp"
+    tools:context=".MovieItem">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvItem"
+        android:layout_margin="2dp">
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="@dimen/thumbnail"
+            android:layout_height="@dimen/thumbnail"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_margin="5dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/mvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:text="Name of Movie"
+                android:textColor="#000000"
+                android:textSize="@dimen/contact_name" />
+
+            <TextView
+                android:id="@+id/mvYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:layout_gravity="center"
+                android:text="Year of movie"
+                android:textColor="#000000"
+                android:textSize="@dimen/contact_number" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
