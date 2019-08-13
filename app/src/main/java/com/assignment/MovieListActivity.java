@@ -45,7 +45,7 @@ public class MovieListActivity extends AppCompatActivity implements RecycleItemL
         intent.putExtra("imgID",imgID);
         startActivity(intent);
     }
-
+//onCreate method...
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
